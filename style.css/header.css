@@ -1,0 +1,26 @@
+
+.hero {
+
+}
+
+
+.hero_upper {
+
+}
+
+.hero-upper__content {
+
+
+}
+
+.header-upper__inner {
+    width: var(--inner-width);
+}
+
+.hero-upper__image {
+
+}
+
+.hero_upper > span {
+    position: absolute;
+}

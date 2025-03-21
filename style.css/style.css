@@ -1,0 +1,129 @@
+:root {
+    --inner-width: min(calc(100% - 32px), 1312px);
+
+    --header-font1: white;
+
+    --transition: all 0.35 ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    background-color: #6C63D8;
+
+}
+
+
+body {
+    width: 100%;
+    height: 500vh;
+    display: flex;
+    flex-direction: column;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 16px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.header_inner{
+    width: var(--inner-width);
+    display: flex;
+    justify-content: space-between;
+}
+.header_logo{
+    font-size: 1.7rem;
+    height: 500vh;
+    font-weight: 800;
+    color: var(--header-font1);
+    text-decoration: none;
+    user-select: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.header_main-nav a {
+    height:fit-content;
+    justify-content: center;
+    text-decoration: none;
+    gap: 24px;
+    margin: 30px;
+    padding: 5px 10px;
+    display: inline-block;
+    color: var(--header-font1);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.header_main-nav > a:hover::after {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    content: '';
+    width: 0;
+    transition: var(--transition);
+    opacity: 0;
+    background-color: antiquewhite;
+}
+
+.mobile-nav_open{
+    display: none;
+}
+
+.header_social-nav {
+    display: flex;
+    gap:8px;
+}
+
+.header_social-nav > a {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(135, 127, 145, 0.15);
+    border-radius: 30px;
+    color: var(--header-font1);
+    
+}
+
+.header_social-nav > a:hover {
+    background-color: rgba(94, 0, 202, 0.15);
+
+}
+.hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.hero-upper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6D63D8;
+}
+ 
+.hero-upper__inner {
+    width: var(--inner-width);
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-nav_open {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: var(--header-font1);
+    border-radius: 2px;
+}
+
+
